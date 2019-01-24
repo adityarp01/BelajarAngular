@@ -1,0 +1,28 @@
+<br />
+<br />
+
+<form  [formGroup]="contactForm" (ngSubmit)="kirim()">
+	<div class = "form-group row">
+		<label class = "col-sm-3 form-control-label" for="username">Nama Anda: </label>
+			<div class ="col-sm-6">
+				<input type = "text" [formControlName]="'username'" class="form-control">
+		</div>	
+	</div>
+	
+	<div class = "form-group row">
+		<label class = "col-sm-3 form-control-label" for="usermail">Email Anda: </label>
+			<div class ="col-sm-6">
+				<input type = "text" [formControlName]="'usermail'" class="form-control">
+		</div>	
+	</div>
+	
+	<div class = "form-group row">
+		<label class = "col-sm-3 form-control-label" for="usermsg">Pesan Anda: </label>
+			<div class ="col-sm-6">
+				<input type = "text" [formControlName]="'usermsg'" class="form-control">
+		</div>
+	</div>
+	<button type ="add" class="btn btn-danger" (click)="kirim()">Add Friend</button>
+	
+	
+</form>
